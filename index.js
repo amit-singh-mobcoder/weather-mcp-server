@@ -20,6 +20,16 @@ server.tool("getWeatherBycityName",
     { city: z.string() },
     async ({ city }) => {
         const data = await getWeatherByCity(city);
+        if (!data) {
+            return {
+                content: [
+                    {
+                        type: "text",
+                        text: "Failed to retrieve weather data",
+                    },
+                ],
+            };
+        }
         return { content: [{ type: "text", text: data }] };
     }
 );
