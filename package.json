@@ -1,0 +1,22 @@
+{
+  "name": "intro-mcp-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.6.3",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mcp.js": "link:@modelcontextprotocol/sdk/server/mcp.js",
+    "stdio.js": "link:@modelcontextprotocol/sdk/server/stdio.js",
+    "zod": "^3.24.2"
+  }
+}
